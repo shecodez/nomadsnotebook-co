@@ -1,3 +1,5 @@
+<script setup lang="ts"></script>
+
 <template>
   <div>
     <NuxtLayout>
@@ -5,3 +7,27 @@
     </NuxtLayout>
   </div>
 </template>
+
+<style>
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  /* height: 100%; */
+  font-family: "Permanent Marker", sans-serif;
+}
+
+/* Page Transitions */
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.3s ease-in-out;
+}
+
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
+  transform: scale(0.99);
+}
+</style>
