@@ -13,12 +13,6 @@ html {
   scroll-behavior: smooth;
 }
 
-html,
-body {
-  /* height: 100%; */
-  font-family: "Permanent Marker", sans-serif;
-}
-
 /* Page Transitions */
 .page-enter-active,
 .page-leave-active {

@@ -26,7 +26,7 @@ export default defineConfig({
         mono: ["Fira Code", "Fira Mono:400,700"],
         // custom fonts
         majorMono: "Major Mono Display",
-        permanentMarker: "Permanent Marker",
+        courgette: "Courgette",
       },
     }), // https://unocss.dev/presets/web-fonts
   ],

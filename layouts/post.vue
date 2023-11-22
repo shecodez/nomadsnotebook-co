@@ -1,6 +1,10 @@
-<script lang="ts" setup></script>
+<script setup lang="ts">
+import Header from "~/components/pageHeader.vue";
+import Footer from "~/components/pageFooter.vue";
+</script>
 
 <template>
+  <Header />
   <div class="flex gap-2">
     <div class="grow">
       <slot />
@@ -10,6 +14,7 @@
       <slot name="rightColumn"></slot>
     </div>
   </div>
+  <Footer />
 </template>
 
 <style scoped></style>

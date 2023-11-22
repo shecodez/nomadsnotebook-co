@@ -43,18 +43,44 @@ useHead({
 </script>
 
 <template>
-  <div class="p-5">
-    <nuxt-link to="/blog" class="inline-flex gap-2 items-center">
-      <div i-carbon:arrow-left />
-      Back to Blog
-    </nuxt-link>
+  <div>
+    <div class="relative aspect-[16/9]">
+      <img
+        :src="post.featureImage.url"
+        :alt="post.featureImage.title"
+        class="absolute inset-0 h-full w-full bg-gray-50 object-cover"
+      />
 
-    <article class="mx-auto prose first-letter:text-3xl">
+      <div absolute inset-0 flex flex-col items-center justify-center>
+        <nuxt-link to="/blog" class="fx-2-ic">
+          <div i-carbon:arrow-left />
+          Back to Blog
+        </nuxt-link>
+        <h1 p-3 bg-black bg-opacity-40 text-white text-4xl font-bold>
+          {{ post.title }}
+        </h1>
+        <div>Tags...</div>
+      </div>
+
+      <div absolute bottom-2 right-2 font-mono text-yellow>
+        <time :datetime="post.publishDate">{{ post.publishDate }}</time>
+      </div>
+    </div>
+
+    <article mx-auto prose first-letter:text-3xl>
       <content-renderer :value="post">
         <template #empty>
           <p>No content found.</p>
         </template>
       </content-renderer>
+      <div w-full border-b py-4 />
     </article>
+
+    <div flex justify-center my-8>
+      <nuxt-link to="/blog" class="fx-2-ic">
+        <div i-carbon:arrow-left />
+        Back to Blog
+      </nuxt-link>
+    </div>
   </div>
 </template>
