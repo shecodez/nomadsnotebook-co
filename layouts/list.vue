@@ -1,7 +1,7 @@
 <script lang="ts" setup></script>
 
 <template>
-  <div mt-20>
+  <div>
     <slot name="title"></slot>
 
     <div

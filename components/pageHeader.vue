@@ -5,7 +5,7 @@
 </script>
 
 <template>
-  <header fixed w-full bg-black text-white bg-opacity-40 top-0 z-20 shadow-md>
+  <header w-full shadow-md>
     <div px-4 md:text-xl class="fx-2-ic font-courgette">
       <div flex-1>
         <div md:hidden text-xl class="fx-2-ic">
@@ -31,7 +31,7 @@
           <img
             src="/images/NomadsNotebookCo-Logo-T.png"
             alt="logo"
-            class="w-24 h-auto object-cover filter-invert"
+            class="w-20 h-auto object-cover"
         /></nuxt-link>
       </div>
 

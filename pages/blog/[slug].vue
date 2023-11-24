@@ -44,22 +44,32 @@ useHead({
 
 <template>
   <div>
-    <div class="relative aspect-[16/9]">
+    <div class="feature-image-container relative aspect-[16/9]">
       <img
         :src="post.featureImage.url"
         :alt="post.featureImage.title"
         class="absolute inset-0 h-full w-full bg-gray-50 object-cover"
       />
 
-      <div absolute inset-0 flex flex-col items-center justify-center>
+      <div class="overlay" absolute inset-0 h-full w-full bg-black opacity-0 />
+
+      <div
+        absolute
+        inset-0
+        flex
+        flex-col
+        items-center
+        justify-center
+        text-white
+      >
         <nuxt-link to="/blog" class="fx-2-ic">
           <div i-carbon:arrow-left />
           Back to Blog
         </nuxt-link>
-        <h1 p-3 bg-black bg-opacity-40 text-white text-4xl font-bold>
+        <h1 p-3 text-4xl font-bold font-courgette>
           {{ post.title }}
         </h1>
-        <div>Tags...</div>
+        <div font-thin>Tags...</div>
       </div>
 
       <div absolute bottom-2 right-2 font-mono text-yellow>
@@ -84,3 +94,13 @@ useHead({
     </div>
   </div>
 </template>
+
+<style scoped>
+.overlay {
+  transition: 0.5s ease-in-out;
+}
+.feature-image-container:hover .overlay {
+  opacity: 0.8;
+  backdrop-filter: saturate(180%) blur(20px);
+}
+</style>

@@ -1,19 +1,15 @@
 <script setup lang="ts">
 import Header from "~/components/pageHeader.vue";
 import Footer from "~/components/pageFooter.vue";
+import AnnouncementBar from "~/components/announcementBar.vue";
 </script>
 
 <template>
   <Header />
-  <div class="flex gap-2">
-    <div class="grow">
-      <slot />
-    </div>
-
-    <div class="border">
-      <slot name="rightColumn"></slot>
-    </div>
-  </div>
+  <AnnouncementBar>this is an announcement</AnnouncementBar>
+  <main>
+    <slot />
+  </main>
   <Footer />
 </template>
 
