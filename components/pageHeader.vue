@@ -5,13 +5,13 @@
 </script>
 
 <template>
-  <AnnouncementBar>
+  <AdminBar>
     <p>
-      <span class="text-primary font-majorMono">NoNo</span>
+      2024 <span class="text-primary font-majorMono">NoNo</span>
       <span ml--1.5 opacity-80 class="font-majorMono">diGi</span>
-      Beta is Live!!
+      <em> ZenBuJo</em> beta version is live!!
     </p>
-  </AnnouncementBar>
+  </AdminBar>
 
   <header w-full shadow-md>
     <div px-4 md:text-xl class="fx-2-ic">
@@ -47,7 +47,9 @@
           <div><span class="text-primary font-majorMono">CO</span>...</div> -->
           <div flex items-center gap-1>
             <div title="Home" i-carbon:home md:text-2xl />
-            <span class="text-primary font-majorMono">NONOCO</span>
+            <nuxt-link to="/" class="text-primary font-majorMono">
+              NONOCO
+            </nuxt-link>
           </div>
         </div>
       </div>

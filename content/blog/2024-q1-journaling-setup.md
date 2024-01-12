@@ -5,7 +5,7 @@ summary:
 author:
   name: Zen G.
   at: zenithgael
-  imageUrl: /images/shecodez.jpeg
+  imageUrl: /images/zen.jpeg
 featureImage:
   url: /images/2024-q1-journaling-setup.jpg
   title: 2024 q1 journaling setup

@@ -4,7 +4,7 @@ const navLinks = [
   { label: "About", href: "/about" },
   // { label: 'Blog', href: '/blog' },
   { label: "Contact", href: "/contact" },
-  { label: "Legal", href: "/legal" },
+  { label: "Legal", href: "/legal/terms" },
 ];
 
 const socialLinks = [
@@ -30,7 +30,7 @@ const socialLinks = [
   },
 ];
 
-const locationLabel = "Atlanta, GA";
+const locationLabel = "Atlanta, GA USA";
 const locationQuery = "https://www.google.com/search?q=atlanta+ga";
 </script>
 
@@ -70,7 +70,7 @@ const locationQuery = "https://www.google.com/search?q=atlanta+ga";
             <g font-size="24px" fill="white">
               <text transform="translate(0,75)" letter-spacing="5">
                 <textPath xlink:href="#wave" uppercase>
-                  Subscribe to the newsletter 😀
+                  Subscribe to the newsletter 📮
                 </textPath>
               </text>
             </g>
