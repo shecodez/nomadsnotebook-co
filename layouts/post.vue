@@ -1,12 +1,12 @@
 <script setup lang="ts">
 import Header from "~/components/pageHeader.vue";
 import Footer from "~/components/pageFooter.vue";
-import AnnouncementBar from "~/components/announcementBar.vue";
+import AdminBar from "~/components/adminBar.vue";
 </script>
 
 <template>
   <Header />
-  <AnnouncementBar>this is an announcement</AnnouncementBar>
+  <AdminBar>this is an announcement</AdminBar>
   <main>
     <slot />
   </main>

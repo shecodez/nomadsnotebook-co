@@ -5,21 +5,16 @@
 </script>
 
 <template>
-  <AdminBar>
-    <p>
-      2024 <span class="text-primary font-majorMono">NoNo</span>
-      <span ml--1.5 opacity-80 class="font-majorMono">diGi</span>
-      <em> ZenBuJo</em> beta version is live!!
-    </p>
-  </AdminBar>
-
   <header w-full shadow-md>
     <div px-4 md:text-xl class="fx-2-ic">
       <div flex-1>
-        <div md:hidden text-xl class="fx-2-ic">
+        <div text-xl class="fx-2-ic">
           <SideDrawer>
             <template #menuBtn>
-              <div title="menu" i-carbon:menu md:text-2xl />
+              <div flex items-center gap-1>
+                <div title="menu" i-carbon:menu md:text-2xl />
+                <h5 class="text-primary font-majorMono">NONOCO</h5>
+              </div>
             </template>
 
             <div min-h-screen p-5 flex flex-col>
@@ -40,17 +35,6 @@
               </div>
             </div>
           </SideDrawer>
-        </div>
-        <div hidden md:flex class="fx-3-ic">
-          <!-- <div><span class="text-primary font-majorMono">NO</span>mad's</div>
-          <div><span class="text-primary font-majorMono">NO</span>tebooks</div>
-          <div><span class="text-primary font-majorMono">CO</span>...</div> -->
-          <div flex items-center gap-1>
-            <div title="Home" i-carbon:home md:text-2xl />
-            <nuxt-link to="/" class="text-primary font-majorMono">
-              NONOCO
-            </nuxt-link>
-          </div>
         </div>
       </div>
 

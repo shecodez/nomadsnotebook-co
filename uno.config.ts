@@ -11,6 +11,8 @@ export default defineConfig({
   shortcuts: [
     ["fx-2-ic", "flex gap-2 items-center"],
     ["fx-3-ic", "flex gap-3 items-center"],
+    ["btn", "py-2 px-4 flex items-center justify-center gap-1"],
+    ["btn-primary", "rounded-full bg-primary text-white"],
   ],
   presets: [
     presetUno(), // required

@@ -1,23 +1,23 @@
 <template>
   <div container mx-auto py-10>
-    <ContentDoc>
-      <template #default="{ doc }">
-        <section flex gap-8>
-          <aside v-if="!!doc.body.toc.links.length" w-80 hidden md:block>
+    <div flex gap-8>
+      <content-doc>
+        <template #default="{ doc }">
+          <aside v-if="!!doc.body?.toc?.links.length" w-80 hidden md:block>
             <div sticky top-24>
-              <MdToc :links="doc.body.toc.links" />
+              <DocOutline :links="doc.body?.toc?.links" />
             </div>
           </aside>
 
           <article prose>
-            <ContentRenderer :value="doc" />
+            <content-renderer :value="doc">
+              <template #empty>
+                <p>No content found.</p>
+              </template>
+            </content-renderer>
           </article>
-        </section>
-      </template>
-
-      <template #empty>
-        <p>No content found.</p>
-      </template>
-    </ContentDoc>
+        </template>
+      </content-doc>
+    </div>
   </div>
 </template>

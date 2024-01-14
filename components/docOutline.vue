@@ -24,28 +24,26 @@ const flattenLinks = (links) => {
 </script>
 
 <template>
+  <div p-4 mb-2 border-1 rounded flex items-center justify-between>
+    <h3 text-xl font-bold>Document Outline</h3>
+    <button hover:text-primary @click="showOutline = !showOutline">
+      <div :class="showOutline ? 'rotate-180' : ''" i-carbon:row-expand />
+      <span sr-only>Expand/Collapse Outline</span>
+    </button>
+  </div>
   <nav
-    max-w-prose
-    mx-auto
-    my-1
+    v-if="showOutline"
+    max-w-sm
     p-4
     border
     rounded
     overflow-auto
     class="toc max-h-[calc(100vh-10rem)]"
   >
-    <header pt-2 mb-2 border-b-2 flex items-center justify-between>
-      <h3 text-xl font-bold>Outline</h3>
-      <button hover:text-orange @click="showOutline = !showOutline">
-        <div v-if="showOutline" i-carbon:caret-up />
-        <div v-else i-carbon:caret-down />
-        <span sr-only>Expand/Collapse Outline</span>
-      </button>
-    </header>
-    <ul v-if="showOutline" flex flex-col gap-2 px-2>
+    <ul flex flex-col gap-2>
       <!-- render each link with depth class -->
       <template v-for="link of flattenLinks(links)" :key="link.id">
-        <li text-gray-500 :class="`toc-link _${link.depth}`">
+        <li :class="`toc-link _${link.depth}`">
           <a :href="`#${link.id}`">
             {{ link.text }}
           </a>

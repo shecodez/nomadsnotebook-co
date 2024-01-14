@@ -1,4 +1,10 @@
 <script setup lang="ts">
+const config = useRuntimeConfig();
+
+useHead({
+  title: `About | ${config.public.app.name}`,
+});
+
 const socialLinks = [
   // {
   //   icon: 'i-carbon:logo-discord',

@@ -7,7 +7,7 @@ const { data: posts } = await useAsyncData("posts", () =>
 
 const runtimeConfig = useRuntimeConfig();
 useHead({
-  title: `blog | ${runtimeConfig.public.site.name}`,
+  title: `blog | ${runtimeConfig.public.app.name}`,
 });
 </script>
 

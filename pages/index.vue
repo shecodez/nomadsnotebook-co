@@ -1,7 +1,7 @@
 <script lang="ts" setup>
-const runtimeConfig = useRuntimeConfig();
+const config = useRuntimeConfig();
 useHead({
-  title: `${runtimeConfig.public.site.name}`,
+  title: `${config.public.app.name}`,
 });
 </script>
 

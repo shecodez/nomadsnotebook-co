@@ -30,13 +30,13 @@ const post = await queryContent("/blog").where({ _path: route.path }).findOne();
 
 const runtimeConfig = useRuntimeConfig();
 useHead({
-  title: `${post?.title} | ${runtimeConfig.public.site.name}`,
+  title: `${post?.title} | ${runtimeConfig.public.app.name}`,
   meta: [
     { name: "description", content: post?.description },
     {
       hid: "og:image",
       property: "og:image",
-      content: `${runtimeConfig.public.site.url}${post?.featureImage.url}`,
+      content: `${runtimeConfig.public.app.url}${post?.featureImage.url}`,
     },
   ],
 });

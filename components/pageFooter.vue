@@ -30,7 +30,7 @@ const socialLinks = [
   },
 ];
 
-const locationLabel = "Atlanta, GA USA";
+const locationLabel = "Atlanta, GA, USA"; // next: Hachiōji, Tokyo, Japan
 const locationQuery = "https://www.google.com/search?q=atlanta+ga";
 </script>
 
@@ -76,19 +76,22 @@ const locationQuery = "https://www.google.com/search?q=atlanta+ga";
             </g>
           </svg>
 
-          <div class="absolute-centered">
+          <form id="newsletter" class="absolute-centered">
             <div relative flex items-center mx-auto max-w-sm>
               <input
+                id="email"
+                name="email"
                 type="email"
                 placeholder="your@email.com"
                 class="flex-1 rounded-l-full py-2 px-4"
+                autocomplete="email"
               />
-              <button bg-primary rounded-r-full py-2 px-4>
+              <button bg-primary rounded-r-full py-2 px-4 type="submit">
                 subscribe
                 <!-- <div title="subscribe" i-carbon:send text-lg /> -->
               </button>
             </div>
-          </div>
+          </form>
         </div>
 
         <ul py-4 flex justify-center gap-4 text-xl text-primary>

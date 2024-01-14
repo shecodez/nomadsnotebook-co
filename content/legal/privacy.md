@@ -4,18 +4,18 @@ title: Privacy Policy | Nomad's Notebook Company【NONOCO】
 
 # Privacy Policy
 
-**Last updated December 12, 2022**
+**Last updated January 12, 2024**
 
-This privacy policy for Nomads Notebook Company LLC ("**Company**," "**we**," "**us**," or "**our**"), describes how and why we might collect, store, use, and/or share ("**process**") your information when you use our services ("**Services**"), such as when you:
+This privacy policy for Nomads Notebook .Co ("**Company**," "**we**," "**us**," or "**our**"), describes how and why we might collect, store, use, and/or share ("**process**") your information when you use our services ("**Services**"), such as when you:
 
 - Visit our website at [https://nomadsnotebook.co](https://nomadsnotebook.co), or any website of ours that links to this privacy policy
 - Engage with us in other related ways, including any sales, marketing, or events
 
-**Questions or concerns?** Reading this privacy policy will help you understand your privacy rights and choices. If you do not agree with our policies and practices, please do not use our Services. If you still have any questions or concerns, please contact us at support@nomadsnotebook.co.
+**Questions or concerns?** Reading this privacy policy will help you understand your privacy rights and choices. If you do not agree with our policies and practices, please do not use our Services. If you still have any questions or concerns, please contact us at contact@nomadsnotebook.co.
 
 **SUMMARY OF KEY POINTS**
 
-**_This summary provides key points from our privacy policy, but you can find out more details about any of these topics by clicking the link following each key point or by using our table of contents to find the section you are looking for._**
+**_This summary provides key points from our privacy policy, but you can find out more details about any of these topics by clicking the link following each key point or by using our Document Outline to find the section you are looking for._**
 
 **What personal information do we process?** When you visit, use, or navigate our Services, we may process personal information depending on how you interact with Nomads Notebook Company and the Services, the choices you make, and the products and features you use. Click [here](/legal/privacy#infocollect) to learn more.
 
@@ -33,7 +33,7 @@ This privacy policy for Nomads Notebook Company LLC ("**Company**," "**we**," "*
 
 **How do you exercise your rights?** The easiest way to exercise your rights is by filling out our data subject request form available here: [https://nomadsnotebook.co/contact](https://nomadsnotebook.co/contact), or by contacting us. We will consider and act upon any request in accordance with applicable data protection laws.
 
-Want to learn more about what Nomads Notebook Company does with any information we collect? See the Table of Contents to review the notice in full.
+Want to learn more about what Nomads Notebook Company does with any information we collect? See the Document Outline to review the notice in full.
 
 ## WHAT INFORMATION DO WE COLLECT?
 
