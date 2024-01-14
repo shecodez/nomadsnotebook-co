@@ -1,7 +1,7 @@
 {
-  "name": "nuxt-app",
+  "name": "nomadsnotebook-co",
   "private": true,
-  "type": "module",
+  "packageManager": "pnpm@7.9.0",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
