@@ -5,6 +5,7 @@ const navLinks = [
   // { label: 'Blog', href: '/blog' },
   { label: "Contact", href: "/contact" },
   { label: "Legal", href: "/legal/terms" },
+  // faq, refund policy, shop
 ];
 
 const socialLinks = [
@@ -86,9 +87,9 @@ const locationQuery = "https://www.google.com/search?q=atlanta+ga";
                 class="flex-1 rounded-l-full py-2 px-4"
                 autocomplete="email"
               />
-              <button bg-primary rounded-r-full py-2 px-4 type="submit">
-                subscribe
+              <button type="submit" rounded-r-full class="btn btn-primary">
                 <!-- <div title="subscribe" i-carbon:send text-lg /> -->
+                subscribe
               </button>
             </div>
           </form>
@@ -107,13 +108,31 @@ const locationQuery = "https://www.google.com/search?q=atlanta+ga";
             alt="logo"
             class="w-10 h-auto object-cover"
           />
-          <a :href="locationQuery" target="_blank" underline>
+          <a :href="locationQuery" target="_blank">
             {{ locationLabel }}
           </a>
         </div>
       </div>
     </div>
   </footer>
+  <AdminBar>
+    <div px-4 flex flex-col md:flex-row items-center md:justify-between>
+      <div flex items-center gap-1>
+        &copy; {{ new Date().getFullYear() }}
+        <span class="text-primary font-majorMono">NONOCO</span>&middot;
+        <span hidden md:block>All Rights Reserved.</span>
+        <nuxt-link to="/legal/privacy"> Privacy Policy </nuxt-link> |
+        <nuxt-link to="/legal/terms"> Terms of Use </nuxt-link>
+      </div>
+
+      <div flex items-center gap-1>
+        Made with
+        <div class="i-carbon:favorite-filled text-primary" />
+        by <a href="https://shecodez.com" target="_blank">shecodez</a> &middot;
+        NJN
+      </div>
+    </div>
+  </AdminBar>
 </template>
 
 <style scoped>
@@ -122,5 +141,8 @@ const locationQuery = "https://www.google.com/search?q=atlanta+ga";
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+a:hover {
+  text-decoration: underline;
 }
 </style>

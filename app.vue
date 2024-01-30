@@ -5,10 +5,10 @@ useRecaptchaProvider();
 </script>
 
 <template>
-  <NuxtLoadingIndicator />
-  <NuxtLayout>
-    <NuxtPage />
-  </NuxtLayout>
+  <nuxt-loading-indicator />
+  <nuxt-layout>
+    <nuxt-page />
+  </nuxt-layout>
 </template>
 
 <style>
@@ -44,6 +44,13 @@ textarea.required {
   background-size: 1.2em 1.2em;
   background-position: right top;
   background-repeat: no-repeat;
+}
+
+input:disabled,
+button:disabled {
+  cursor: not-allowed;
+  opacity: 50%;
+  filter: grayscale(1);
 }
 
 /* Font styles */

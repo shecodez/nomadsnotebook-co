@@ -32,14 +32,15 @@ const socialLinks = [
 <template>
   <article prose mx-auto my-20>
     <h1 text-center>
-      Nomad's Notebook Company 【<span class="text-primary font-majorMono"
-        >NONOCO</span
-      >】
+      {{ config.public.app.name }}
+      【<span class="text-primary font-majorMono">NONOCO</span>】
     </h1>
-    <p text-center font-italic>
-      If you love using stationary, but not being stationary. <br />Hi friend 👋
-      Welcome to Nomad's Notebook .Co!
-    </p>
+    <div text-center font-italic flex>
+      If you
+      <div class="i-carbon:favorite-filled text-primary" />
+      stationary, but not being stationary. <br />Hi friend 👋 Welcome to
+      Nomad's Notebook Company!
+    </div>
 
     <h3>Q: analog or Digital Notes? A: Yes!</h3>
     <p>
@@ -50,7 +51,15 @@ const socialLinks = [
       convenience.
     </p>
 
-    <h3>Where adventure meets the page</h3>
+    <h3 flex gap-1>
+      home is where my
+      <img
+        src="/images/favicon-t.png"
+        alt="logo"
+        class="w-4 h-auto object-cover"
+      />
+      (pen) is
+    </h3>
     <p>
       Whether navigating through lively city streets or unwinding in serene
       countryside, our products are there for every adventure. Be it physical
@@ -122,7 +131,7 @@ const socialLinks = [
 
     <p>
       Ready to turn the page on your next adventure in style? Explore our shop,
-      and let the adventures with Nomad's Notebook Company begin!
+      and let the adventures with {{ config.public.app.name }} begin!
     </p>
 
     <p text-right>―<span class="text-primary font-majorMono">NONOCO</span></p>

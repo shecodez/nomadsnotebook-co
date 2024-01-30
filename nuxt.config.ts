@@ -6,7 +6,11 @@ export default defineNuxtConfig({
     "@vueuse/nuxt",
     "@formkit/nuxt",
     "vue-recaptcha/nuxt",
+    "@nuxt/image",
   ],
+  // image: {
+  //   domains: ["cloudinary.com"],
+  // },
   runtimeConfig: {
     // The private keys which are only available server-side
     apiSecret: "123",
@@ -14,7 +18,7 @@ export default defineNuxtConfig({
     public: {
       app: {
         url: "https://nomadsnotebook.co",
-        name: "Nomad's Notebook Company【NONOCO】",
+        name: "Nomad's Notebook .Co【NONOCO】",
         desc: "",
       },
       // https://dansnow.github.io/vue-recaptcha/guide/nuxt

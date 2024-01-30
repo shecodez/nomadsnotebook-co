@@ -156,7 +156,7 @@ useHead({
 <style>
 #contact-page {
   /* screen ( adminBar + header height) */
-  min-height: calc(100vh - (32.5px + 80px));
+  min-height: calc(100vh - (32px + 80px));
 }
 
 .send-btn {

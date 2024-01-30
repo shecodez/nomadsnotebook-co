@@ -1,5 +1,5 @@
 ---
-title: Terms of Use | Nomad's Notebook Company【NONOCO】
+title: Terms of Use | Nomad's Notebook .Co【NONOCO】
 ---
 
 # Terms of Use

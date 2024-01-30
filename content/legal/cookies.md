@@ -1,5 +1,5 @@
 ---
-title: Cookie Policy | Nomad's Notebook Company【NONOCO】
+title: Cookie Policy | Nomad's Notebook .Co【NONOCO】
 ---
 
 # Cookie Policy

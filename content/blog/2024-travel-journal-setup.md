@@ -1,5 +1,5 @@
 ---
-title: 2024 q1 journaling setup
+title: 2024 Travel Notebook Setup
 description:
 summary:
 author:
@@ -7,10 +7,10 @@ author:
   at: zenithgael
   imageUrl: /images/zen.jpeg
 featureImage:
-  url: /images/2024-q1-journaling-setup.jpg
-  title: 2024 q1 journaling setup
-publishDate: 09 January 2024
-publishDateTime: 2024-01-09:16:30
+  url: /images/blog/2024-travel-notebook-setup.jpg
+  title: 2024 travel notebook setup
+publishDate: 30 January 2024
+publishDateTime: 2024-01-30:16:30
 ---
 
 This is a classic programmers introduction to new concepts.

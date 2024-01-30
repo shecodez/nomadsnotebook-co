@@ -1,5 +1,5 @@
 ---
-title: Privacy Policy | Nomad's Notebook Company【NONOCO】
+title: Privacy Policy | Nomad's Notebook .Co【NONOCO】
 ---
 
 # Privacy Policy

@@ -1,11 +1,13 @@
 <script setup lang="ts">
+const config = useRuntimeConfig();
+
 // notebooks
 // nomad's > writing tools, stationary, stickers, apperal, misc stuff
 // co... > about, blog, newsletter, f.a.q., contact
 </script>
 
 <template>
-  <header w-full shadow-md>
+  <header w-full shadow-md sticky top-0 z-10 border-t>
     <div px-4 md:text-xl class="fx-2-ic">
       <div flex-1>
         <div text-xl class="fx-2-ic">
@@ -21,18 +23,18 @@
               <div text-center mb-12>
                 <div text-3xl class="text-primary font-majorMono">NONOCO</div>
                 <div text-sm font-bold text-gray-600>
-                  Nomad's Notebook Company
+                  {{ config.public.app.name }}
                 </div>
               </div>
 
-              <div flex-1 flex flex-col gap-3 text-xl class="sideNavLinks">
+              <nav flex-1 flex flex-col gap-3 text-xl class="sideNavLinks">
                 <nuxt-link to="/">Home</nuxt-link>
                 <nuxt-link to="/about">About</nuxt-link>
                 <!-- <nuxt-link to="/blog">Blog</nuxt-link>
                 <nuxt-link to="/faqs">FAQs</nuxt-link> -->
                 <nuxt-link to="/contact">Contact</nuxt-link>
                 <!-- <nuxt-link mt-auto to="/login">Login</nuxt-link> -->
-              </div>
+              </nav>
             </div>
           </SideDrawer>
         </div>

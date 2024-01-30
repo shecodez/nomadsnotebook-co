@@ -1,10 +1,10 @@
 ---
-title: Affiliate Disclosure | Nomad's Notebook Company【NONOCO】
+title: Affiliate Disclosure | Nomad's Notebook .Co【NONOCO】
 ---
 
 # Disclosure
 
-Nomads Notebook Company is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com.
+Nomads Notebook .Co is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com.
 
 We also use other affiliate programs, including but not limited to Clickbank, and Digistore24. This means that if you click on a link and make a purchase from an affiliate site, we may make a commission from that purchase. This commission comes at no additional cost to you.
 

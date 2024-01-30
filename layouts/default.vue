@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import Header from "~/components/pageHeader.vue";
-import Footer from "~/components/pageFooter.vue";
+import PageHeader from "~/components/pageHeader.vue";
+import PageFooter from "~/components/pageFooter.vue";
 import AdminBar from "~/components/adminBar.vue";
 </script>
 
@@ -8,16 +8,16 @@ import AdminBar from "~/components/adminBar.vue";
   <div min-h-screen flex flex-col>
     <AdminBar>
       <p>
-        2024 <span class="text-primary font-majorMono">NoNo</span>
-        <span ml--1.5 opacity-80 class="font-majorMono">diGi</span>
-        <em> ZenBuJo</em> beta version is live!!
+        2024 <span class="text-primary font-majorMono relative z-1">NoNo</span>
+        <span ml--1.5 opacity-80 class="font-majorMono">DiGi</span>
+        <em> ZenBuJo</em> Yang Edition is live!!
       </p>
     </AdminBar>
-    <Header />
+    <PageHeader />
     <main>
       <slot />
     </main>
-    <Footer />
+    <PageFooter />
   </div>
 </template>
 

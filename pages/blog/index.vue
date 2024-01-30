@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import Card from "~/components/blog/card.vue";
+import PostCard from "~/components/blog/PostCard.vue";
 
 const { data: posts } = await useAsyncData("posts", () =>
   queryContent("/blog").find()
@@ -15,8 +15,8 @@ useHead({
   <nuxt-layout name="list">
     <template #title>
       <div bg-black text-white h-48 flex flex-col items-center justify-center>
-        <h1 text-3xl mb-2><span class="font-majorMono">NONOCO</span> Blog</h1>
-        <p>Here's were we get our digital nomad on...</p>
+        <h1 text-3xl mb-2><span class="font-majorMono">NONOCO</span> DigiJo</h1>
+        <p>thoughts and reflections 🙏</p>
       </div>
     </template>
 
@@ -25,7 +25,7 @@ useHead({
       :key="post.id"
       class="relative isolate flex flex-col gap-8 lg:flex-row"
     >
-      <card :post="post" />
+      <PostCard :post="post" />
     </article>
   </nuxt-layout>
 </template>
