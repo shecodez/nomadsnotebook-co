@@ -47,9 +47,15 @@ const digitalCons = [
   "Devices used for planning can be distracting",
 ];
 
+type InstagramPost = {
+  id: string;
+  url: string;
+  caption: string;
+};
+
 const state = reactive({
   loading: false,
-  instagramFeed: [],
+  instagramFeed: [] as InstagramPost[],
   error: "",
 });
 
@@ -165,11 +171,24 @@ useHead({
     </div>
   </AdminBar>
   <section id="instagram-feed" style="background-image: url(/images/grid.png)">
-    <div p-12 text-center>
+    <div p-4 text-center>
       <h3 flex items-center justify-center gap-1 text-2xl font-bold mb-4>
-        @nomadsnotebookco
+        <a href="https://www.instagram.com/nomadsnotebookco/" target="_blank">
+          @nomadsnotebookco
+        </a>
       </h3>
-      <pre>{{ state.instagramFeed }}</pre>
+      <!-- <pre>{{ state.instagramFeed }}</pre> -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
+        <template v-for="p in state.instagramFeed" :key="p.id">
+          <div relative aspect-square>
+            <nuxt-img
+              :src="p.url"
+              :alt="p.caption"
+              class="absolute inset-0 h-full w-full object-cover"
+            />
+          </div>
+        </template>
+      </div>
     </div>
   </section>
 </template>

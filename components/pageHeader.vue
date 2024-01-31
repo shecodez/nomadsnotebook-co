@@ -7,7 +7,7 @@ const config = useRuntimeConfig();
 </script>
 
 <template>
-  <header w-full shadow-md sticky top-0 z-10 border-t>
+  <header w-full shadow-md sticky top-0 z-10 border-t-black>
     <div px-4 md:text-xl class="fx-2-ic">
       <div flex-1>
         <div text-xl class="fx-2-ic">
